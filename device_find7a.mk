@@ -240,7 +240,6 @@ PRODUCT_PACKAGES += \
 
 # Scripts
 PRODUCT_PACKAGES += \
-    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.bt.sh \
     init.qcom.efs.sync.sh \

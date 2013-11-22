@@ -59,24 +59,6 @@ on early-boot
     # Allow subsystem (modem etc) debugging
     write /sys/module/subsystem_restart/parameters/enable_debug ${persist.sys.ssr.enable_debug}
     write /sys/kernel/boot_adsp/boot 1
-    exec /system/bin/sh /init.qcom.early_boot.sh ${ro.board.platform}
-
-    write /sys/bus/platform/drivers/msm_hsic_host/unbind "msm_hsic_host"
-
-    chown system system /sys/bus/platform/drivers/msm_hsic_host/bind
-    chmod 0200 /sys/bus/platform/drivers/msm_hsic_host/bind
-
-    chown system system /sys/bus/platform/drivers/msm_hsic_host/unbind
-    chmod 0200 /sys/bus/platform/drivers/msm_hsic_host/unbind
-
-    setprop wlan.driver.config /data/misc/wifi/WCNSS_qcom_cfg.ini
-
-    # Trigger WCNSS for firmware download
-    write /dev/wcnss_wlan 1
-
-    write /sys/devices/fb000000.qcom,wcnss-wlan/serial_number ${ro.serialno}
-
-    start wcnss-service
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
@@ -694,10 +676,6 @@ on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
      insmod /system/lib/modules/qcedev.ko
 
-on property:crypto.driver.load=0
-     exec /system/bin/rmmod qcedev.ko
-     exec /system/bin/rmmod qce.ko
-
 service drmdiag /system/bin/drmdiagapp
     class late_start
      user root
@@ -821,10 +799,6 @@ service ssr_diag /system/bin/ssr_diag
     class late_start
     user system
     group system
-
-# SSR setting
-on property:persist.sys.ssr.restart_level=*
-    exec /system/bin/sh /init.qcom.ssr.sh ${persist.sys.ssr.restart_level}
 
 # Define fastmmi
 service fastmmi /system/bin/mmi
