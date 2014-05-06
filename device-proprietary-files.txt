@@ -152,11 +152,6 @@ vendor/lib/libscale.so
 etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 
-# IMS core
--app/ims.apk
-etc/permissions/ims.xml
--framework/imslibrary.jar
-
 # Listen service
 vendor/lib/liblistenhardware.so
 vendor/lib/liblistenjni.so
