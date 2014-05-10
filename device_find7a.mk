@@ -224,7 +224,6 @@ PRODUCT_PACKAGES += \
     init.qcom.efs.sync.sh \
     init.qcom.fm.sh \
     init.qcom.sdio.sh \
-    init.qcom.wifi.sh \
     init.crda.sh \
     init.qcom.sh \
     init.qcom.class_core.sh \
