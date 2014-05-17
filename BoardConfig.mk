@@ -163,14 +163,21 @@ TARGET_HW_DISK_ENCRYPTION := true
 
 # Board specific SELinux policy variable definitions
 BOARD_SEPOLICY_DIRS := \
-   device/qcom/common/sepolicy
+   device/oppo/find7a/sepolicy
 
-BOARD_SEPOLICY_UNION := \
-    file_contexts \
-    app.te \
-    device.te \
+# The list below is order dependent
+BOARD_SEPOLICY_UNION += \
     file.te \
-    netd.te \
-    ueventd.te
+    device.te \
+    app.te \
+    cne.te \
+    qmux.te \
+    mpdecision.te \
+    thermald.te \
+    ueventd.te \
+    vold.te \
+    file_contexts \
+    genfs_contexts \
+    te_macros
 
 PRODUCT_BOOT_JARS := $(subst $(space),:,$(PRODUCT_BOOT_JARS))
