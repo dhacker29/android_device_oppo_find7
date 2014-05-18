@@ -278,6 +278,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += wcnss_service
 
+# Enable Bluetooth HFP service
+PRODUCT_PROPERTY_OVERRIDES +=
+    bluetooth.hfp.client=1
+
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
