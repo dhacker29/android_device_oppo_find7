@@ -113,11 +113,9 @@ bin/hvdcp
 # GPS
 -app/com.qualcomm.location.apk
 bin/gsiff_daemon
-bin/location-mq
 bin/quipc_igsn
 bin/quipc_main
 etc/permissions/com.qualcomm.location.xml
-etc/xtwifi.conf
 lib/libloc_api_v02.so
 lib/libloc_ds_api.so
 vendor/lib/hw/flp.default.so
@@ -231,13 +229,11 @@ vendor/lib/libril-qcril-hook-oem.so
 
 # Sensors
 bin/sensors.qcom
+etc/sensor_def_qcomdev.conf
 vendor/lib/libAKM8963.so
 vendor/lib/hw/sensors.msm8974.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_thresh.so
-vendor/lib/libsensor_user_cal.so
-etc/sensor_def_qcomdev.conf
 
 # Thermal
 bin/thermal-engine
