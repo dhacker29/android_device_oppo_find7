@@ -304,7 +304,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.sensors.gestures=true \
     ro.qualcomm.cabl=0 \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=15
+    wifi.supplicant_scan_interval=15 \
+    ro.qualcomm.perf.cores_online=2
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
