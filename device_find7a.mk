@@ -250,7 +250,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     wpa_supplicant_overlay.conf \
-    p2p_supplicant_overlay.conf
+    p2p_supplicant_overlay.conf \
+    hostapd.accept \
+    hostapd.deny \
+    hostapd_default.conf
 
 PRODUCT_PACKAGES += wcnss_service
 
