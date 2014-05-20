@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := device/oppo/find7a
 
 ifeq ($(TARGET_DEVICE),find7a)
 

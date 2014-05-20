@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := device/oppo/find7a
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
