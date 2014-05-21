@@ -110,7 +110,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/oppo/msm8974
+TARGET_KERNEL_SOURCE := kernel/oppo/find7a
 TARGET_KERNEL_CONFIG := msm8974_find7_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/oppo/find7a/mkbootimg.mk
 BOARD_KERNEL_BASE        := 0x00000000
