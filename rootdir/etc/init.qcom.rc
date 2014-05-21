@@ -80,7 +80,37 @@ on boot
     chmod 0660 /dev/ttyHS0
     chown bluetooth bluetooth /sys/devices/platform/msm_serial_hs.0/clock
     chmod 0660 /sys/devices/platform/msm_serial_hs.0/clock
-
+#Add begin for flash led test by liujinshui
+    chown system system /sys/devices/qcom,camera-led-flash.1/test
+    chown system system /sys/class/leds/led:flash_0/flash_blink
+    chown system system /sys/class/leds/led:flash_1/flash_blink
+    chown system system /sys/class/leds/led:flash_torch/flash_blink
+#Add end
+#Add begin for flash led test by lingjianing
+    chown system system /sys/class/leds/led:flash_torch/brightness
+#Add end
+#oppo yuyi 2014-03-10 add begin for PMIC RGB_led
+#ifdef VENDOR_EDIT
+	chown root system sys/class/leds/rgb_red/brightness
+	chmod 0660 sys/class/leds//rgb_red/brightness
+	chown root system sys/class/leds/rgb_green/brightness
+	chmod 0660 sys/class/leds/rgb_green/brightness
+	chown root system sys/class/leds/rgb_blue/brightness
+	chmod 0660 sys/class/leds/rgb_blue/brightness
+	chown root system sys/class/leds/rgb_red/step_ramp_ms
+	chmod 0660 sys/class/leds/rgb_red/step_ramp_ms
+	chown root system sys/class/leds/rgb_green/step_ramp_ms
+	chmod 0660 sys/class/leds/rgb_green/step_ramp_ms
+	chown root system sys/class/leds/rgb_blue/step_ramp_ms
+	chmod 0660 sys/class/leds/rgb_blue/step_ramp_ms
+	chown root system sys/class/leds/rgb_red/blink
+	chmod 0660 sys/class/leds/rgb_red/blink
+	chown root system sys/class/leds/rgb_green/blink
+	chmod 0660 sys/class/leds/rgb_green/blink
+	chown root system sys/class/leds/rgb_blue/blink
+	chmod 0660 sys/class/leds/rgb_blue/blink
+#endif//VENDOR_EDIT
+#oppo yuyi 2014-03-10 add end for PMIC RGB_led
     chmod 0660 /dev/ttyHS2
     chown bluetooth bluetooth /dev/ttyHS2
 
@@ -241,6 +271,8 @@ on post-fs-data
     mkdir /data/time/ 0700 system system
 
     mkdir /data/audio/ 0770 media audio
+    # Enable the setgid bit on the directory
+    chmod 2770 /data/audio
 
     setprop vold.post_fs_data_done 1
 
