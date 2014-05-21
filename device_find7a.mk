@@ -281,6 +281,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
     telephony.lteOnCdmaDevice=0 \
     persist.radio.add_power_save=1 \
+    persist.sys.usb.config=mtp,adb \
     ro.qc.sdk.camera.facialproc=true \
     ro.qc.sdk.gestures.camera=false \
     ro.qc.sdk.sensors.gestures=true \
