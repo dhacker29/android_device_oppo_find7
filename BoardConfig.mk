@@ -159,9 +159,10 @@ TARGET_HW_DISK_ENCRYPTION := true
 
 # Board specific SELinux policy variable definitions
 BOARD_SEPOLICY_DIRS := \
-       device/qcom/common/sepolicy
+   device/qcom/common/sepolicy
 
 BOARD_SEPOLICY_UNION := \
-       netd.te
+    file.te \
+    netd.te
 
 PRODUCT_BOOT_JARS := $(subst $(space),:,$(PRODUCT_BOOT_JARS))
