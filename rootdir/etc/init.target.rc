@@ -44,6 +44,7 @@ on post-fs
 
 on fs
     mount_all fstab.qcom
+    restorecon_recursive /persist
 
     # Keeping following partitions outside fstab file. As user may not have
     # these partition flashed on the device. Failure to mount any partition in fstab file
