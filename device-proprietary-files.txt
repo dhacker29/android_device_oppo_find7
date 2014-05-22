@@ -57,6 +57,7 @@ vendor/lib/libmmcamera_ov5648.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
 vendor/lib/libchromatix_imx214_common.so
 vendor/lib/libchromatix_imx214_default_video.so
@@ -66,6 +67,7 @@ vendor/lib/libchromatix_imx214_liveshot.so
 vendor/lib/libchromatix_imx214_preview.so
 vendor/lib/libchromatix_imx214_snapshot.so
 vendor/lib/libchromatix_imx214_snapshot_hdr.so
+vendor/lib/libchromatix_imx214_video_binning.so
 vendor/lib/libchromatix_imx214_video_hdr.so
 vendor/lib/libchromatix_ov5648_common.so
 vendor/lib/libchromatix_ov5648_default_video.so
