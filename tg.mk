@@ -35,9 +35,10 @@ $(call inherit-product, vendor/Gummy/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
-# Discard inherited values and use our own instead.
 PRODUCT_NAME := tg_find7a
-PRODUCT_DEVICE := find7a
-PRODUCT_BRAND := OPPO
-PRODUCT_MANUFACTURER := OPPO
-PRODUCT_MODEL := Find7a
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_BRAND=OPPO \
+    PRODUCT_NAME=Find7a \
+    BUILD_PRODUCT=FIND7 \
+    BUILD_FINGERPRINT=4.3/JLS36C/1390465867:user/release-keys
