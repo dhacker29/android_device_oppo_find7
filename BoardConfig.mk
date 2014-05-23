@@ -162,7 +162,11 @@ BOARD_SEPOLICY_DIRS := \
    device/qcom/common/sepolicy
 
 BOARD_SEPOLICY_UNION := \
+    file_contexts \
+    app.te \
+    device.te \
     file.te \
-    netd.te
+    netd.te \
+    ueventd.te
 
 PRODUCT_BOOT_JARS := $(subst $(space),:,$(PRODUCT_BOOT_JARS))

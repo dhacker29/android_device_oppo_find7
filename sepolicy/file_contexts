@@ -1,0 +1,6 @@
+# Firmware filesystem
+/firmware(/.*)?                 u:object_r:firmware_file:s0
+# Block labeling
+/dev/block/mmcblk0p1            u:object_r:firmware_file:s0
+# GPU device
+/dev/kgsl-3d0                   u:object_r:gpu_device:s0
