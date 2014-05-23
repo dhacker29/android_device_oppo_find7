@@ -40,17 +40,17 @@ start_sensors()
     if [ -c /dev/msm_dsps -o -c /dev/sensors ]; then
         mkdir -p /persist/sensors
         chmod -h 775 /persist/sensors
-		chown -h system:root /persist/sensors
+        chown -h system:root /persist/sensors
         chmod -h 664 /data/system/sensors/settings
         chown -h system:root /persist/sensors/sensors_settings
 
         mkdir -p /data/misc/sensors
         chmod -h 775 /data/misc/sensors
-		chown -h system:system /data/misc/sensors
+        chown -h system:system /data/misc/sensors
 
         echo 1 > /persist/sensors/sensors_settings
-		
-		restorecon -r /data/misc/sensors
+
+        restorecon -r /data/misc/sensors
 
         start sensors
     fi
