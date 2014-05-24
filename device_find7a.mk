@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += wcnss_service
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
+    debug.composition.type=dyn \
     persist.timed.enable=true \
     ro.opengles.version=196608 \
     ro.qualcomm.bt.hci_transport=smd \
