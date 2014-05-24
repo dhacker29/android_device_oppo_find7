@@ -62,7 +62,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DOPPO_CAMERA_HARDWARE
 
 # Charger
-BOARD_CHARGER_RES := device/oppo/find7a/charger/images
+BOARD_CHARGER_RES := device/oppo/find7a/charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # CM Hardware
