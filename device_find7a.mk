@@ -88,7 +88,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.gapless.enabled=false \
     qcom.hw.aac.encoder=true \
     persist.aanc.enable=true \
-    tunnel.audio.encode=true
+    tunnel.audio.encode=true \
+    qemu.hw.mainkeys=1
 
 # Camera
 PRODUCT_PACKAGES += \
