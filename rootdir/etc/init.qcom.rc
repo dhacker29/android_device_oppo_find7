@@ -304,7 +304,7 @@ on post-fs-data
 
     # Torch
     chown system camera /sys/devices/qcom,camera-led-flash.81/test
-    chmod 0666 /sys/devices/qcom,camera-led-flash.81/test
+    chmod 0777 /sys/devices/qcom,camera-led-flash.81/test
 
 # Export GPIO56 for fusion targets to enable/disable hub
 service usbhub_init /system/bin/usbhub_init
