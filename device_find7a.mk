@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
 # Keylayouts
-PRODUCT_PACKAGES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8974
+
+# Logo
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/logo.bin:system/logo.bin
 
 # Media
 PRODUCT_PACKAGES += \
