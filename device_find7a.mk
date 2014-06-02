@@ -239,12 +239,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.class_core.sh \
     init.class_main.sh \
-    init.qcom.ril.sh \
     init.qcom.usb.sh \
-    init.qcom.syspart_fixup.sh \
-    init.qcom.audio.sh \
-    init.mdm.sh \
-    init.qcom.modem_links.sh
+    init.qcom.audio.sh
 
 # Thermal config
 PRODUCT_COPY_FILES += \
