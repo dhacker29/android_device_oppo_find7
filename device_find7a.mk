@@ -107,6 +107,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTIES_OVERRIDES += persist.cne.feature=1
 
+# Crda
+PRODUCT_PACKAGES += \
+    crda \
+    linville.key.pub.pem \
+    regdbdump \
+    regulatory.bin
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
