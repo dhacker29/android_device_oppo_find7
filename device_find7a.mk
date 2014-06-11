@@ -89,7 +89,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     qcom.hw.aac.encoder=true \
     persist.aanc.enable=true \
     tunnel.audio.encode=true \
-    qemu.hw.mainkeys=1
+    qemu.hw.mainkeys=1\
+    view.scroll_friction=1\
+    ro.min_pointer_dur=8\
+    ro.min_fling_velocity=8000\
+    ro.max_fling_velocity=16000
 
 # Camera
 PRODUCT_PACKAGES += \
