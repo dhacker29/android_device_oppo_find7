@@ -90,6 +90,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.aanc.enable=true \
     tunnel.audio.encode=true \
     media.aac_51_output_enabled=true \
+    audio.offload.pcm.enable=true \
     qemu.hw.mainkeys=1\
     view.scroll_friction=1\
     ro.min_pointer_dur=8\
