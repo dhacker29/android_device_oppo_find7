@@ -155,7 +155,7 @@ etc/firmware/a330_pm4.fw
 # Listen service
 vendor/lib/liblistenhardware.so
 vendor/lib/liblistenjni.so
-vendor/lib/liblisten.so
+-vendor/lib/liblisten.so
 vendor/lib/liblistensoundmodel.so
 
 # Media
@@ -181,7 +181,7 @@ vendor/lib/libqc-opt.so
 -app/PPPreference.apk
 bin/mm-pp-daemon
 vendor/lib/libdisp-aba.so
-vendor/lib/libmm-abl.so
+-vendor/lib/libmm-abl.so
 vendor/lib/libmm-abl-oem.so
 
 # Qualcomm framework
