@@ -105,6 +105,9 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # Enables Adreno RS driver
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_find7
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
