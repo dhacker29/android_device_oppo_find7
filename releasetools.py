@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Custom OTA commands for find7a devices"""
+"""Custom OTA commands for find7 devices"""
 
 def FullOTA_InstallEnd(info):
     info.script.AppendExtra('ui_print("{x}...Flashing Gummy Logo Image...");')

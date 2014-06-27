@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_PATH := device/oppo/find7a
+LOCAL_PATH := device/oppo/find7
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -323,7 +323,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/oppo/find7a/find7a-vendor.mk)
+$(call inherit-product-if-exists, vendor/oppo/find7/find7-vendor.mk)
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)

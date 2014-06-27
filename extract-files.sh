@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export VENDOR=oppo
-export DEVICE=find7a
+export DEVICE=find7
 
 # Check to see if the user passed a folder in to extract from rather than adb pull
 if [ $# -eq 1 ]; then

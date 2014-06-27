@@ -78,5 +78,5 @@
   </array>
     <!-- This is the battery capacity in mAh -->
     <!-- find7a=2800, find7=3000 -->
-    <item name="battery.capacity">2800</item>
+    <!-- <item name="battery.capacity">2800</item> -->
 </device>

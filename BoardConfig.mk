@@ -17,10 +17,10 @@
 # inherit from Oppo common
 -include device/oppo/common/BoardConfigCommon.mk
 
--include vendor/oppo/find7a/BoardConfigVendor.mk
+-include vendor/oppo/find7/BoardConfigVendor.mk
 
 # Include path
-TARGET_SPECIFIC_HEADER_PATH := device/oppo/find7a/include
+TARGET_SPECIFIC_HEADER_PATH := device/oppo/find7/include
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
@@ -44,7 +44,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := FIND7,find7a,X9006,X9007,x9076
+TARGET_OTA_ASSERT_DEVICE := FIND7,find7,find7a,X9006,X9007,x9076
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf
@@ -55,17 +55,17 @@ AUDIO_FEATURE_DISABLED_FM := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7a/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find7/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DOPPO_CAMERA_HARDWARE
 
 # Charger
-BOARD_CHARGER_RES := device/oppo/find7a/charger
+BOARD_CHARGER_RES := device/oppo/find7/charger
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += device/oppo/find7a/cmhw
+BOARD_HARDWARE_CLASS += device/oppo/find7/cmhw
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01000000
@@ -85,7 +85,7 @@ TARGET_NO_RPC := true
 
 # Graphics
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
-BOARD_EGL_CFG := device/oppo/find7a/configs/egl.cfg
+BOARD_EGL_CFG := device/oppo/find7/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
@@ -109,10 +109,10 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/oppo/find7a
+TARGET_KERNEL_SOURCE := kernel/oppo/find7
 TARGET_KERNEL_CONFIG := msm8974_find7_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := Linaro-4.8
-BOARD_CUSTOM_BOOTIMG_MK := device/oppo/find7a/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/oppo/find7/mkbootimg.mk
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
@@ -128,14 +128,14 @@ TARGET_QCOM_MEDIA_VARIANT := caf-new
 BOARD_USES_QC_TIME_SERVICES := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/oppo/find7a/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/oppo/find7/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7a
+TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find7
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
@@ -166,7 +166,7 @@ TARGET_USES_CPU_BOOST_HINT := true
 
 # Board specific SELinux policy variable definitions
 BOARD_SEPOLICY_DIRS := \
-   device/oppo/find7a/sepolicy
+   device/oppo/find7/sepolicy
 
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
