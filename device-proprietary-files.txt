@@ -250,5 +250,4 @@ etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
 # WiFi
-bin/hwaddrs
 lib/libwcnss_qmi.so
