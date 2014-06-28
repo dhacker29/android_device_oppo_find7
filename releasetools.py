@@ -16,6 +16,6 @@
 """Custom OTA commands for find7 devices"""
 
 def FullOTA_InstallEnd(info):
-    info.script.AppendExtra('ui_print("{x}...Flashing Gummy Logo Image...");')
-    info.script.AppendExtra('package_extract_file("system/logo.bin", "/dev/block/platform/msm_sdcc.1/by-name/LOGO");')
+    info.script.AppendExtra('ifelse(is_substring("find7a", getprop("ro.oppo.device")), ui_print("{x}...Flashing Gummy Logo Image..."));')
+    info.script.AppendExtra('ifelse(is_substring("find7a", getprop("ro.oppo.device")), package_extract_file("system/logo.bin", "/dev/block/platform/msm_sdcc.1/by-name/LOGO"));')
     info.script.AppendExtra('delete("/system/logo.bin");')
