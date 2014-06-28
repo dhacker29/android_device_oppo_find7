@@ -19,3 +19,5 @@ def FullOTA_InstallEnd(info):
     info.script.AppendExtra('ifelse(is_substring("find7a", getprop("ro.oppo.device")), ui_print("{x}...Flashing Gummy Logo Image..."));')
     info.script.AppendExtra('ifelse(is_substring("find7a", getprop("ro.oppo.device")), package_extract_file("system/logo.bin", "/dev/block/platform/msm_sdcc.1/by-name/LOGO"));')
     info.script.AppendExtra('delete("/system/logo.bin");')
+    info.script.AppendExtra('ifelse(is_substring("480", getprop("ro.sf.lcd_density")), run_program("/sbin/sh", "-c", "busybox mv /system/media/1080.zip /system/media/bootanimation.zip"));')
+    info.script.AppendExtra('delete("/system/media/1080.zip");')

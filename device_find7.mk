@@ -312,6 +312,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.supplicant_scan_interval=15 \
     ro.qualcomm.perf.cores_online=2
 
+# Include 1080 boot animation in the zip for find7a
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/bootanimation/1080.zip:system/media/1080.zip
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
