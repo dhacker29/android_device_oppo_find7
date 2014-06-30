@@ -107,11 +107,13 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Connectivity Engine support
+ifeq ($(BOARD_USES_QCNE),true)
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     services-ext
 
 PRODUCT_PROPERTY_OVERRIDES += persist.cne.feature=1
+endif
 
 # Crda
 PRODUCT_PACKAGES += \

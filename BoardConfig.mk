@@ -156,7 +156,7 @@ TARGET_USES_QCOM_WCNSS_QMI       := true
 TARGET_USES_WCNSS_MAC_ADDR_REV   := true
 
 # Enable CNE
-BOARD_USES_QCNE := true
+#BOARD_USES_QCNE := true
 
 # Added to indicate that protobuf-c is supported in this build
 PROTOBUF_SUPPORTED := true
