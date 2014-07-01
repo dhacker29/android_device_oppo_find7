@@ -243,6 +243,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     libinit_find7
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
+
 # Scripts
 PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
