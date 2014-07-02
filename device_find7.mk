@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 # Connectivity Engine support
 ifeq ($(BOARD_USES_QCNE),true)
 PRODUCT_PACKAGES += \
+    init.cne.rc \
     libcnefeatureconfig \
     services-ext
 
