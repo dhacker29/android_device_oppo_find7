@@ -167,10 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.msm8974
-
 # Logo
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/logo.bin:system/logo.bin
