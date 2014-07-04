@@ -137,9 +137,6 @@ vendor/lib/libscale.so
 etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 
-# Lights
-lib/hw/lights.msm8974.so
-
 # Media
 -vendor/lib/libHevcSwDecoder.so
 vendor/lib/libI420colorconvert.so
