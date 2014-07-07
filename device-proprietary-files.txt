@@ -21,12 +21,12 @@ etc/firmware/audience-es325-fw.bin
 # Bluetooth
 bin/btnvtool
 bin/hci_qcomm_init
-vendor/lib/libbtnv.so
+-vendor/lib/libbtnv.so
 vendor/lib/liboi_sbc_decoder.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8974.so:lib/hw/camera.vendor.msm8974.so
+lib/hw/camera.vendor.msm8974.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libqomx_core.so
@@ -82,7 +82,7 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 
 # DRM
 bin/qseecomd
-lib/libQSEEComAPI.so:vendor/lib/libQSEEComAPI.so
+vendor/lib/libQSEEComAPI.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
