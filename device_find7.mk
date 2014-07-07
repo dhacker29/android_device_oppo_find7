@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8974
+    camera.MSM8974
 
 # Charger
 PRODUCT_PACKAGES += \
